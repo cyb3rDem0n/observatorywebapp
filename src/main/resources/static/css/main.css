@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+h1{
+	color:#0000FF;
+}
+
+h2{
+	font-size:15px;
+	color:#008080;
+}
+
+h6{
+	font-size:8x;
+	color:#c0c0c0;
+}
+
+input[type="submit"] {
+			background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+}
+
+footer{
+    margin-top:60px;
+}

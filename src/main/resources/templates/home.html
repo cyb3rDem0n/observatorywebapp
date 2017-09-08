@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>cyberdemonRulez</title>
+
+    <div th:replace="fragments/header :: header-css"/>
+
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div style="text-align: center" class="container">
+
+    <div class="starter-template">
+        <h1>Web Application</h1>
+        <h6>Spring Security protected, Need Admin/User login</h6>
+        <h2>1. Visit <a th:href="@{/welcome}">Welcome page </a></h2>
+        <h2>2. Visit <a th:href="@{/admin}">Admin page</a></h2>
+        <h2>3. Visit <a th:href="@{/list}">List page</a></h2>
+    	<h2>4. Visit <a th:href="@{/insert}">Insert page</a></h2>
+    	<h2>5. Visit <a th:href="@{/search}">Show stuff</a></h2>
+    	<h2>6. Visit <a th:href="@{/feedback}">Find by car company</a></h2>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>

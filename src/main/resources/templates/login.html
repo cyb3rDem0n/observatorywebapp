@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>>Welcome Security with Spring Boot!</title>
+</head>
+<body>
+	<h1 style="text-align: center">
+		<font size="20" color="blue">LOGIN PAGE</font>
+	</h1>
+	<div style="text-align: center" th:if="${param.error}">
+		<h1 style="color: red">Username or Password is wrong. Please
+			check again</h1>
+	</div>
+	<div style="text-align: center" th:if="${param.logout}">
+		<h1 style="color: blue">Logged out.</h1>
+	</div>
+	<form style="text-align: center" th:action="@{/login}" method="post">
+		<p>
+			<input type="text" name="username" value="" placeholder="username" />
+		</p>
+		<p>
+			<input type="password" name="password" value=""
+				placeholder="password" />
+		</p>
+		<p class="submit">
+			<input type="submit" value="Sign In" />
+		</p>
+	</form>
+</body>
+</html>

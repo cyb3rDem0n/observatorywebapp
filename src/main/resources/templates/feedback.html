@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<h3 style="text-align: center">
+		<font size="20" color="black">Search Cars By Company Name</font>
+	</h3>
+
+	<form style="text-align: center" action="feedback" method="GET">
+		Input Value: <input type="text" name="company" /> <input type="submit"
+			value="Submit" />
+	</form>
+	
+	<br/>
+
+	<table align="center" border="1" cellpadding="2" cellspacing="2">
+		<tr>
+			<th>Company</th>
+			<th>Model</th>
+			<th>Options</th>
+		</tr>
+		<tr th:each="car, iterStat: ${companyList}">
+			<td th:text="${car.company}"></td>
+			<td th:text="${car.model}"></td>
+			<td><a th:href="${'/car/delete/' + car.id}">Delete</a></td>
+		</tr>
+	</table>
+	<h2 style="text-align: center">
+		<a style="color: blue" th:href="@{/}">Go to Home Page!</a>
+	</h2>
+	<h2 style="text-align: center">
+		<a style="color: blue" th:href="@{/insert}">Go to Creation Page!</a>
+	</h2>
+
+</body>
+</html>

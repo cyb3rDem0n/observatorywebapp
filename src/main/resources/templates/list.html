@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<!-- <div>
+		<p th:each="car : ${carsList}" th:text="${car.company}"></p>
+	</div> -->
+	
+	<h3 style="text-align: center">
+	<font size="20" color="black">Cars List</font>
+	</h3>
+	<table align="center" border="1" cellpadding="2" cellspacing="2">
+		<tr>
+			<th>Id</th>
+			<th>Company</th>
+			<th>Model</th>
+			<th>Price</th>
+			<th>Options</th>
+		</tr>
+			<tr th:each="car, iterStat: ${carsList}">
+				<td th:text="${car.id}"></td>
+				<td th:text="${car.company}"></td>
+				<td th:text="${car.model}"></td>
+				<td th:text="${car.price}"></td>
+				<td> 
+				<a th:href="${'/car/delete/' + car.id}">Delete</a>				
+									
+<!-- <a th:href="@{'/delete/' + car.id}" onclick="return confirm('Sure?')">Delete</a> --> 					
+<!-- <a th:href="|@{/delete/${car.id}}|" class="btn btn-danger">Delete</a> -->			
+				
+				</td>			
+			</tr>
+	</table>
+	
+	<h2 style="text-align: center"><a style="color:blue" th:href="@{/}">Go to Home Page!</a></h2>
+	<h2 style="text-align: center"><a style="color:blue" th:href="@{/insert}">Go to Creation Page!</a></h2>
+		
+</body>
+</html>

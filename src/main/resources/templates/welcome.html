@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Welcome Security with Spring Boot!</title>
+</head>
+<body>
+	<h1 style="text-align: center">Welcome to cyberdemon Web
+		Application!</h1>
+	<div style="text-align: center">
+
+		<a style="color: blue" th:href="@{/}">Return to Home Page!</a> 
+		<br /><br />
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign Out" />
+		</form>
+	</div>
+</body>
+</html>
