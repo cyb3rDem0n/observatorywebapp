@@ -1,0 +1,24 @@
+	vado nella directory del progetto di interesse
+
+ 	$ git init
+	$ git remote add origin https://github.com/rekrux/nomerepo.git
+	$ git add .
+	$ git commit -a -m "Initial commit"
+	$ git remote -v
+	$ git push -f origin master
+
+	dopo le modifiche, basta che faccio il solito git status e poi committo come prima e dopo 
+
+	$ git status
+	$ git commit -a -m "comment"
+	$ git push -f origin master
+
+	Se occorre aggiungere un branches nuovo e committare con quest ulrimo, avro'
+
+	$ git checkout -b [name_of_your_new_branch]
+	// cambio branch
+	$ git checkout [name_of_your_new_branch]  
+	$ git status
+	$ git commit -a -m "comment"
+	$ git push origin [name_of_your_new_branch]
+
