@@ -8,3 +8,4 @@ Only users with ADMIN role can edit or question the database users table.
 Framework\ ORM Used:
 Spring, Spring Boot, Spring Security, Hibernate.
 
+https://stackoverflow.com/questions/24943839/how-to-run-entire-junit-test-suite-from-within-code
