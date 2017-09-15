@@ -12,3 +12,4 @@ https://stackoverflow.com/questions/24943839/how-to-run-entire-junit-test-suite-
 https://www.mkyong.com/java/java-properties-file-examples/
 https://github.com/pholser/junit-quickcheck
 http://junit.org/junit4/faq.html
+https://www.ontestautomation.com/an-introduction-to-property-based-testing-with-junit-quickcheck/
