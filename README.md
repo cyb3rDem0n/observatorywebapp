@@ -13,3 +13,4 @@ https://www.mkyong.com/java/java-properties-file-examples/
 https://github.com/pholser/junit-quickcheck
 http://junit.org/junit4/faq.html
 https://www.ontestautomation.com/an-introduction-to-property-based-testing-with-junit-quickcheck/
+http://www.softwaretestingclass.com/difference-between-black-box-testing-and-white-box-testing/
