@@ -10,3 +10,4 @@ Spring, Spring Boot, Spring Security, Hibernate.
 
 https://stackoverflow.com/questions/24943839/how-to-run-entire-junit-test-suite-from-within-code
 https://www.mkyong.com/java/java-properties-file-examples/
+https://github.com/pholser/junit-quickcheck
