@@ -1,0 +1,19 @@
+List<String[]> transactionLines = new ArrayList<String[]>();
+		
+		String[] transactionLine = new String[7];
+		transactionLine[0] = "0";
+		transactionLine[1] = "1";
+		transactionLine[2] = "something";
+		transactionLine[3] = "3";
+		transactionLine[4] = "4";
+		
+		transactionLines.add(transactionLine);
+		
+		String[] mySL=transactionLines.get(0);
+		
+		System.out.println(mySL[2]);
+		if (mySL[2].equals("something")) {
+			//some code
+		} else {
+			//some code
+		}
